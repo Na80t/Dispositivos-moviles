@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7B9FF"
+    android:paddingTop="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--Imagen del cine-->
+    <ImageView
+        android:id="@+id/ImgFoto"
+        android:layout_width="51dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:paddingTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Boletos"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="#3F51B5"/>
+
+    <LinearLayout
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adulto      $70 "
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/button_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="countUp"
+            android:text="+"
+            android:textSize="20dp"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/button_count1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="countUp"
+            android:textSize="20dp"
+            android:text="-"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Niños       $50 "
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/button_count2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="countUp"
+            android:text="+"
+            android:textSize="20dp"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/button_count3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="countUp"
+            android:textSize="20dp"
+            android:text="-"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3ra Edad  $50 "
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/button_count4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="countUp"
+        android:text="+"
+        android:textSize="20dp"
+        android:textColor="@android:color/white" />
+    <Button
+        android:id="@+id/button_count5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="countUp"
+        android:textSize="20dp"
+        android:text="-"
+        android:textColor="@android:color/white" />
+</LinearLayout>
+</LinearLayout>
