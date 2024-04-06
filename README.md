@@ -12,7 +12,7 @@ clase. La interfaz gráfica que elegimos fue la compra de un boleto para el cine
 
 **cine_layout:**
 
-       
+       Sección donde va a tener el mensaje que está cargando
 
 **pelis_layout:**
 
