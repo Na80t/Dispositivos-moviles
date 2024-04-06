@@ -17,11 +17,12 @@
     <!--Cines del botón que seleccioné-->
     <TextView
         android:id="@+id/cinemasTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center"
+        android:text="Cargando..."
         android:textColor="@android:color/black"
-        android:textSize="30dp"
+        android:textSize="70dp"
         android:textStyle="bold" />
 
 </LinearLayout>
