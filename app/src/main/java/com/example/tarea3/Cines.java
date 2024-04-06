@@ -11,6 +11,7 @@ public class Cines extends AppCompatActivity {
         String localizacion = getIntent().getStringExtra("location");
         String[] cinemas = getCinemas(localizacion);
         TextView cinemasTextView = findViewById(R.id.cinemasTextView);
+
         cinemasTextView.setText("CDMX " + localizacion + ":\n");
         for (String cinema : cinemas) {
             cinemasTextView.append(cinema + "\n");

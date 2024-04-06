@@ -35,7 +35,19 @@
         android:layout_marginTop="10dp"
         android:background="@color/white"
         android:gravity="center"
-        android:text="Fecha y Hora: "
+        android:text="Fecha y Hora:"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/dato"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="5 de abril a las 3:40pm"
         android:textColor="@color/black"
         android:textSize="25dp"
         android:textStyle="bold" />
@@ -47,7 +59,7 @@
         android:layout_marginTop="10dp"
         android:background="@color/white"
         android:gravity="center"
-        android:text="Lugar: "
+        android:text="Lugar: Cine Universidad "
         android:textColor="@color/black"
         android:textSize="25dp"
         android:textStyle="bold" />
@@ -59,7 +71,7 @@
         android:layout_marginTop="10dp"
         android:background="@color/white"
         android:gravity="center"
-        android:text="Función: "
+        android:text="Función: Kung Fu Panda 4 "
         android:textColor="@color/black"
         android:textSize="25dp"
         android:textStyle="bold" />
@@ -71,7 +83,7 @@
         android:layout_marginTop="10dp"
         android:background="@color/white"
         android:gravity="center"
-        android:text="Total: "
+        android:text="Total: $140 "
         android:textColor="@color/black"
         android:textSize="25dp"
         android:textStyle="bold" />
