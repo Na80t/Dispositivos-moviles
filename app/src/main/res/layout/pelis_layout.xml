@@ -15,7 +15,8 @@
         android:layout_height="49dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:src="@drawable/img" />
+        android:src="@drawable/img"
+        android:contentDescription="@string/descripcion"/>
 
     <LinearLayout
         android:layout_width="match_parent"

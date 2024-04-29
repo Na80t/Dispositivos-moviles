@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Tarea3</string>
+    <string name="descripcion">Esta es una imagen que representa una pelicula</string>
 </resources>
