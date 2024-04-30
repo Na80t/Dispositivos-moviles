@@ -1,18 +1,41 @@
+
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#D7B9FF"
-    android:paddingTop="20dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:fitsSystemWindows="true">
+    <!-- AppBarLayout con Toolbar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--        android:theme="@style/Theme.Tarea3.AppTheme.AppBarOverlay">-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.Tarea3">
+<!--            app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <!--Imagen del cine-->
     <ImageView
         android:id="@+id/ImgFoto"
         android:layout_width="51dp"
         android:layout_height="49dp"
+        android:layout_below="@id/toolbar"
         android:layout_gravity="center"
         android:gravity="center"
         android:src="@drawable/img" />
@@ -35,6 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="23dp"
         android:layout_gravity="center"
+
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Selecciona tu cine"
@@ -42,47 +66,8 @@
         android:textSize="20dp"
         android:textStyle="italic" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="257dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:orientation="vertical">
+       <include layout="@layout/contenido"/>
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#6685F6"
-            android:text="Poniente" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#6685F6"
-            android:text="Oriente" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:backgroundTint="#6685F6"
-            android:text="Centro" />
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#6685F6"
-            android:text="Norte" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#6685F6"
-            android:text="Sur" />
-
-    </LinearLayout>
-</LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+<!--</LinearLayout>-->
+</androidx.drawerlayout.widget.DrawerLayout>
