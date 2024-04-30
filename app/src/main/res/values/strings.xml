@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Tarea3</string>
     <string name="descripcion">Esta es una imagen que representa una pelicula</string>
+    <string name="espectacular">Recargar la aplicación</string>
+    <string name="opcion">Recargar</string>
+    <string name="opcion2">Iniciar Sesión</string>
+    <string name="opcion3">Promociones</string>
+    <string name="tres">TresPuntos</string>
 </resources>

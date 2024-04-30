@@ -26,6 +26,8 @@
             android:name=".Cines"
             android:exported="true">
         </activity>
+        <activity android:name=".Pelicula" />
+
 
     </application>
 
